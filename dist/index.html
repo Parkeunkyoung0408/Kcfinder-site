@@ -29,7 +29,7 @@
               aria-expanded="false"
               aria-controls="nav-links"
             >
-              ☰
+              <span class="menu-icon" aria-hidden="true"></span>
             </button>
             <nav id="nav-links" aria-label="주 메뉴">
               <a href="#services">인증 서비스</a>
@@ -46,7 +46,7 @@
               <p class="eyebrow light">KC인증부터 해외 인증까지</p>
               <h1>
                 우리 제품에 필요한 인증,<br />
-                케이씨파인더와<br />
+                케이씨파인더와<span class="title-break"><br /></span>
                 확인하세요.
               </h1>
               <div class="hero-description">
@@ -56,6 +56,9 @@
                 </p>
                 <div class="actions">
                   <a class="pill primary" href="#contact">인증 상담 신청</a>
+                  <a class="text-link" href="#services"
+                    >인증 서비스 살펴보기<img src="assets/icon-right-mist.svg" width="20" height="20" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
@@ -63,18 +66,20 @@
               <div class="hero-banner">
                 <img class="banner-shape" src="assets/aef2d.svg" alt="" />
                 <h2 id="banner-title">
-                  국내부터 해외까지,<br />
-                  제품 인증 상담
+                  국내 판매를 준비한다면<br />
+                  KC인증 상담
                 </h2>
                 <div class="globe-stage">
                   <img src="assets/globe-fallback.svg" alt="" aria-hidden="true" />
                   <canvas
                     id="globe"
-                    aria-label="점으로 표현한 대륙과 위경도선이 회전하는 지구본"
+                    aria-label="점과 와이어프레임으로 이루어진 회전하는 지구본"
                     role="img"
                   ></canvas>
                 </div>
-                <a class="banner-cta" href="#services" id="banner-link">인증 서비스 알아보기 →</a>
+                <a class="banner-cta" href="#services" id="banner-link"
+                  >KC인증 안내 보기<img src="assets/icon-right-light.svg" width="20" height="20" alt=""
+                /></a>
                 <button class="motion-control" aria-pressed="false" aria-label="지구본 회전 일시정지">
                   Ⅱ
                 </button>
@@ -104,13 +109,15 @@
                   확인해야 할 인증 요건을<br />
                   살펴봅니다.
                 </p>
-                <img
-                  class="guide-icon"
-                  src="assets/9bc74.svg"
-                  width="101.2"
-                  height="87.285"
-                  alt="인증 요건 확인"
-                />
+                <span class="guide-icon-slot">
+                  <img
+                    class="guide-icon"
+                    src="assets/9bc74.svg"
+                    width="101.2"
+                    height="87.285"
+                    alt="인증 요건 확인"
+                  />
+                </span>
               </article>
               <article class="folder">
                 <img class="folder-shape" src="assets/578b1.svg" alt="" />
@@ -119,13 +126,15 @@
                   상담과 인증 진행에 필요한<br />
                   제품 정보와 자료를 안내합니다.
                 </p>
-                <img
-                  class="guide-icon"
-                  src="assets/93e55.svg"
-                  width="101.2"
-                  height="97.586"
-                  alt="준비 자료 체크리스트"
-                />
+                <span class="guide-icon-slot">
+                  <img
+                    class="guide-icon"
+                    src="assets/93e55.svg"
+                    width="101.2"
+                    height="97.586"
+                    alt="준비 자료 체크리스트"
+                  />
+                </span>
               </article>
               <article class="folder">
                 <img class="folder-shape" src="assets/88530.svg" alt="" />
@@ -138,13 +147,15 @@
                   비용과 일정에 영향을 주는<br />
                   사항을 안내합니다.
                 </p>
-                <img
-                  class="guide-icon"
-                  src="assets/490ff.svg"
-                  width="101.2"
-                  height="108.429"
-                  alt="진행 일정"
-                />
+                <span class="guide-icon-slot">
+                  <img
+                    class="guide-icon"
+                    src="assets/490ff.svg"
+                    width="101.2"
+                    height="108.429"
+                    alt="진행 일정"
+                  />
+                </span>
               </article>
             </div>
           </div>
@@ -160,7 +171,7 @@
           <p class="eyebrow">CERTIFICATION SERVICES</p>
           <h2>어디에서 판매할 제품인가요?</h2>
           <p>
-            국내 판매를 위한 KC인증부터 해외 시장 진출에 필요한 인증까지,<br />
+            국내 판매를 위한 KC인증부터 해외 시장 진출에 필요한 인증까지,<br class="mobile-break" />
             제품과 판매 국가를 기준으로 필요한 사항을 확인합니다.
           </p>
         </div>
@@ -190,9 +201,13 @@
               </button>
             </div>
             <div class="pagination">
+              <button type="button" aria-label="이전 인증 서비스" class="service-prev">
+                <img src="assets/icon-left.svg" width="16" height="16" alt="" />
+              </button>
               <span id="service-count">01 / 02</span>
-              <button type="button" aria-label="이전 인증 서비스" class="service-prev">←</button>
-              <button type="button" aria-label="다음 인증 서비스" class="service-next">→</button>
+              <button type="button" aria-label="다음 인증 서비스" class="service-next">
+                <img src="assets/icon-right-navy.svg" width="16" height="16" alt="" />
+              </button>
             </div>
           </div>
           <div class="service-panel" id="panel-korea" role="tabpanel" aria-labelledby="tab-korea">
@@ -204,7 +219,9 @@
               <h3>KC인증 상담</h3>
               <p>제품의 용도와 사양을 바탕으로 인증 대상 여부와 준비 절차를 상담합니다.</p>
               <p class="small">인증 대상 여부 · 준비 자료 · 진행 절차</p>
-              <a class="blue-link" href="#contact" data-interest="KC인증">KC인증 상담 신청 →</a>
+              <a class="blue-link" href="#contact" data-interest="KC인증"
+                >KC인증 상담 신청<img src="assets/icon-right-blue.svg" width="20" height="20" alt=""
+              /></a>
             </div>
           </div>
           <div
@@ -222,12 +239,15 @@
               <h3>해외 인증 상담</h3>
               <p>판매 예정 국가와 제품 정보를 바탕으로 현지 인증 요건과 준비 절차를 상담합니다.</p>
               <p class="small">국가별 인증 요건 · 준비 자료 · 진행 절차</p>
-              <a class="blue-link" href="#contact" data-interest="해외 인증">해외 인증 상담 신청 →</a>
+              <a class="blue-link" href="#contact" data-interest="해외 인증"
+                >해외 인증 상담 신청<img src="assets/icon-right-blue.svg" width="20" height="20" alt=""
+              /></a>
             </div>
           </div>
         </div>
         <p class="service-note">
-          필요한 인증을 아직 모르시나요? 상담 신청 시 ‘잘 모르겠어요’를 선택해 주세요.
+          필요한 인증을 아직 모르시나요?<br class="mobile-break" />
+          상담 신청 시 ‘잘 모르겠어요’를 선택해 주세요.
         </p>
       </section>
 
@@ -311,14 +331,20 @@
         <div class="faqs">
           <div>
             <details open>
-              <summary>어떤 인증이 필요한지 몰라도 상담할 수 있나요?</summary>
+              <summary>
+                어떤 인증이 필요한지 몰라도 상담할 수 있나요?
+                <img src="assets/icon-down.svg" width="16" height="16" alt="" />
+              </summary>
               <p>
                 네. 제품명과 용도, 판매 예정 국가를 알려주세요. 제품 정보를 확인한 후 필요한 인증과
                 준비 사항을 안내해 드립니다.
               </p>
             </details>
             <details>
-              <summary>해외 인증도 함께 상담할 수 있나요?</summary>
+              <summary>
+                해외 인증도 함께 상담할 수 있나요?
+                <img src="assets/icon-down.svg" width="16" height="16" alt="" />
+              </summary>
               <p>
                 판매 예정 국가와 제품 정보를 바탕으로 현지 인증 요건과 준비 절차를 상담합니다. 상담
                 분야에서 ‘해외 인증’ 또는 ‘둘 다’를 선택해 주세요.
@@ -327,18 +353,27 @@
           </div>
           <div>
             <details>
-              <summary>상담 전에 어떤 자료를 준비하면 좋나요?</summary>
+              <summary>
+                상담 전에 어떤 자료를 준비하면 좋나요?
+                <img src="assets/icon-down.svg" width="16" height="16" alt="" />
+              </summary>
               <p>
                 제품명, 용도와 사양, 판매 예정 국가를 알려주세요. 처음부터 모든 자료를 준비하지
                 않으셔도 됩니다.
               </p>
             </details>
             <details>
-              <summary>인증 비용과 소요 기간은 어떻게 알 수 있나요?</summary>
+              <summary>
+                인증 비용과 소요 기간은 어떻게 알 수 있나요?
+                <img src="assets/icon-down.svg" width="16" height="16" alt="" />
+              </summary>
               <p>제품과 진행 범위를 확인한 후, 비용과 일정에 영향을 주는 사항을 안내합니다.</p>
             </details>
             <details>
-              <summary>제품 정보가 확정되지 않아도 상담할 수 있나요?</summary>
+              <summary>
+                제품 정보가 확정되지 않아도 상담할 수 있나요?
+                <img src="assets/icon-down.svg" width="16" height="16" alt="" />
+              </summary>
               <p>
                 알고 계신 정보로 상담을 시작해 주세요. 아직 정해지지 않은 내용은 문의 사항에 함께
                 남겨주시면 됩니다.
@@ -449,7 +484,9 @@
         </p>
         <div>
           <small>제품에 필요한 인증이 궁금하다면</small>
-          <a class="blue-link" href="#contact">인증 상담 신청 ↗</a>
+          <a class="blue-link" href="#contact"
+            >인증 상담 신청<img src="assets/icon-up-right.svg" width="20" height="20" alt=""
+          /></a>
         </div>
       </div>
       <div class="footer-columns">
