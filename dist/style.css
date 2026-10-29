@@ -304,6 +304,9 @@ header {
   line-height: 24px;
   color: var(--mist);
 }
+.guide-intro > p:last-child .mobile-break {
+  display: none;
+}
 .folder-cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -371,6 +374,9 @@ header {
   font-size: 14px;
   opacity: 0.86;
 }
+.reassurance p .mobile-break {
+  display: none;
+}
 /* 섹션 제목 */
 .section {
   padding-top: 96px;
@@ -391,6 +397,9 @@ header {
   color: var(--muted);
   font-size: 16px;
   line-height: 24px;
+}
+.section-heading > p:last-child br.narrow-break {
+  display: none;
 }
 
 /* 인증 서비스 */
@@ -1391,6 +1400,12 @@ dialog p {
   .service-note .mobile-break {
     display: inline;
   }
+  .reassurance p .mobile-break {
+    display: inline;
+  }
+  .guide-intro > p:last-child .mobile-break {
+    display: inline;
+  }
   .tabs button {
     height: 52px;
     font-size: 13px;
@@ -1527,6 +1542,11 @@ dialog p {
   }
   dialog {
     padding: 28px 20px;
+  }
+}
+@media (max-width: 480px) {
+  #services .section-heading > p:last-child br.narrow-break {
+    display: inline;
   }
 }
 
