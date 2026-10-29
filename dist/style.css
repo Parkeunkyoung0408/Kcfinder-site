@@ -203,19 +203,6 @@ header {
 .actions .primary {
   min-width: 200px;
 }
-.actions .text-link {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 48px;
-  color: #d4e5ff;
-  font-size: 14px;
-  font-weight: 700;
-}
-.actions .text-link img {
-  flex-shrink: 0;
-}
 .hero-banner {
   position: relative;
   aspect-ratio: 1;
@@ -1077,7 +1064,6 @@ dialog p {
   .actions {
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
     margin-top: 16px;
   }
   .actions .primary {
@@ -1305,12 +1291,6 @@ dialog p {
   .hero-description p {
     font-size: 16px;
     line-height: 26px;
-  }
-  .actions {
-    gap: 8px;
-  }
-  .actions .text-link {
-    display: flex;
   }
   .hero-banner {
     aspect-ratio: 1;
