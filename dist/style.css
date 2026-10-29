@@ -96,13 +96,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 99px;
+  min-height: 113px;
   gap: 24px;
 }
 .logo {
-  font-size: 26px;
-  font-weight: 700;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 73px;
+  flex-shrink: 0;
+  transform: translateX(-25px);
+}
+.logo img {
+  width: 140px;
+  height: auto;
+  max-width: none;
 }
 .nav nav {
   display: flex;
@@ -159,6 +168,14 @@ header {
   font-weight: 900;
   letter-spacing: -1.4px;
   margin-top: 20px;
+}
+.hero-title-search {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  max-width: none;
+  margin-left: 12px;
+  vertical-align: -7px;
 }
 .eyebrow {
   font-family: "Arial Black", "Noto Sans KR", sans-serif;
@@ -346,7 +363,7 @@ header {
 .guide-icon-slot {
   position: absolute;
   right: 24px;
-  bottom: 24px;
+  bottom: 32px;
   width: 101px;
   height: 108px;
   display: flex;
@@ -399,6 +416,9 @@ header {
   line-height: 24px;
 }
 .section-heading > p:last-child br.narrow-break {
+  display: none;
+}
+#process .section-heading > p:last-child br.mobile-break {
   display: none;
 }
 
@@ -519,9 +539,6 @@ header {
   color: var(--muted);
   font-size: 14px;
   margin-top: 16px;
-}
-.service-note .mobile-break {
-  display: none;
 }
 /* 진행 절차 */
 .process {
@@ -830,11 +847,14 @@ footer {
   padding-bottom: 40px;
 }
 .footer-logo {
-  font-size: 36px;
-  line-height: 1.5;
-  font-weight: 900;
-  white-space: nowrap;
-  color: var(--mist);
+  display: block;
+  width: 180px;
+  height: 60px;
+}
+.footer-logo img {
+  width: 180px;
+  height: 60px;
+  max-width: none;
 }
 .footer-top > p {
   font-size: 19px;
@@ -941,7 +961,7 @@ dialog p {
     width: calc(100% - 64px);
   }
   .nav {
-    min-height: 72px;
+    min-height: 105px;
   }
   .menu-toggle {
     display: grid;
@@ -1037,6 +1057,12 @@ dialog p {
     font-size: 44px;
     line-height: 68px;
     letter-spacing: -1px;
+  }
+  .hero-title-search {
+    width: 46px;
+    height: 46px;
+    margin-left: 10px;
+    vertical-align: -6px;
   }
   .title-break {
     display: none;
@@ -1263,12 +1289,15 @@ dialog p {
   .wrap {
     width: calc(100% - 48px);
   }
-  .logo {
-    font-size: 22px;
-  }
   .hero-copy h1 {
     font-size: 32px;
     line-height: 50px;
+  }
+  .hero-title-search {
+    width: 36px;
+    height: 36px;
+    margin-left: 8px;
+    vertical-align: -4px;
   }
   .title-break {
     display: inline;
@@ -1388,6 +1417,9 @@ dialog p {
   .section-heading > p:last-child br.mobile-break {
     display: inline;
   }
+  #process .section-heading > p:last-child br.mobile-break {
+    display: inline;
+  }
   #services .section-heading {
     margin-bottom: 24px;
   }
@@ -1396,9 +1428,6 @@ dialog p {
   }
   #services .section-heading > p:last-child {
     margin: 0 16px;
-  }
-  .service-note .mobile-break {
-    display: inline;
   }
   .reassurance p .mobile-break {
     display: inline;
@@ -1525,7 +1554,12 @@ dialog p {
     grid-template-columns: 1fr;
   }
   .footer-logo {
-    font-size: 28px;
+    width: 150px;
+    height: 50px;
+  }
+  .footer-logo img {
+    width: 150px;
+    height: 50px;
   }
   .footer-top > p {
     font-size: 18px;
