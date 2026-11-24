@@ -16,7 +16,7 @@
     if(reduced.matches) return .80;
     // Start from a closed box, even in short desktop viewports.
     // Viewport visibility alone must never complete the sequence on page load.
-    return clamp((scrollY-heroStart)/travel);
+    return clamp((scrollY-heroStart)/travel) * .80;
   }
   function paintProduct(pair,lid,dispenser,inside,progress) {
     const opened=segment(progress,.05,.32);
@@ -66,14 +66,13 @@
   }
   function request(){ if(!frame&&!document.hidden){last=0;frame=requestAnimationFrame(tick);} }
   function measure(){
-    sticky=!reduced.matches&&innerWidth>700&&innerHeight>=600;
-    travel=Math.min(600,Math.max(360,innerHeight*.65));
+    sticky=!reduced.matches&&innerWidth>1100&&innerHeight>=650;
+    travel=sticky ? Math.min(440,Math.max(300,innerHeight*.4)) : 180;
     document.body.classList.toggle('flowing-hero',sticky);
     scene.style.setProperty('--flow-travel',`${travel}px`);
     heroStart=sticky
       ? scrollY+scene.getBoundingClientRect().top
       : Math.max(0,scrollY+pair.getBoundingClientRect().top-innerHeight*.35);
-    if(!sticky) travel=Math.max(260,innerHeight*.5);
     request();
   }
   document.getElementById('hero-explore')?.addEventListener('click',()=>{
