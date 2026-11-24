@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Image" clip-path="url(#clip0_0_14)">
+<path id="Slider / Handle" d="M22 42.5C33.3218 42.5 42.5 33.3218 42.5 22C42.5 10.6782 33.3218 1.5 22 1.5C10.6782 1.5 1.5 10.6782 1.5 22C1.5 33.3218 10.6782 42.5 22 42.5Z" fill="#172E29" stroke-width="3" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_14">
+<rect width="44" height="44" fill="white"/>
+</clipPath>
+</defs>
+</svg>

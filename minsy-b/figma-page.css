@@ -1,0 +1,155 @@
+/* Figma iYfVxNLP5Ze0kjuENdJJjx / 1:208. Motion uses the existing unboxing artwork. */
+.design-b .container{width:min(1232px,calc(100% - 48px))}
+.design-b .section{padding:100px 0}
+.design-b .site-header{left:16px;right:16px;height:81px;box-shadow:none;border:0}
+.design-b .formula-dot-toggle,.hero-badge-row,.hero-secondary,.formula-label,.ticker,.section-meta-col,.story-copy>.section-index,.story-copy>.eyebrow,.end-inner>.eyebrow,.after-use-header .eyebrow{display:none}
+.design-b .hero{background:#edf6ee;min-height:760px;padding:173px max(24px,calc((100vw - 1232px)/2)) 64px;grid-template-columns:1.25fr 1fr;gap:72px}
+.design-b.flowing-hero .hero{min-height:0;padding-top:40px;padding-bottom:40px}
+.design-b .hero h1{font-size:94.08px;line-height:.9;letter-spacing:-5.174px;font-weight:500}
+.design-b .hero h1 em{font-size:99.725px;line-height:1.08;letter-spacing:-1.994px}
+.design-b .hero-stage-visual{height:480px;min-height:480px}
+.design-b .hero-stage-visual .hero-pair{width:400px;height:480px;max-width:100%;transform:none}
+.design-b .hero-controls{gap:24px}
+.design-b .hero-formula-switcher{margin-top:0}
+.design-b .formula-chip{padding:0;border:0;background:none;box-shadow:none}
+.design-b .formula-chip i{display:none}
+.design-b .hero .intro{margin:24px 0;font-size:19px;line-height:1.7}
+.design-b .section-header,#why>.container>.section-header,.design-b .products-section .section-header{margin:0 auto 56px;gap:0}
+.design-b .section-header h2,#why .section-header h2,.design-b .products-section .section-header h2{font-size:56.96px;line-height:.96;letter-spacing:-2.563px}
+.design-b .section-header h2 em{display:inline-block;line-height:1.1;letter-spacing:-1.139px}
+.design-b .section-lead,#why .section-lead,.design-b .products-section .section-lead{margin:18px auto 0;font-size:17px;line-height:1.75}
+.floss-states{gap:28px}
+.floss-state-image{height:375px;aspect-ratio:auto}
+.floss-state-image,.floss-state-image.state-open,.floss-state-image.state-tension{background:#edf4ee}
+.floss-state h3{font-size:24px;line-height:1.5;margin-top:16px;letter-spacing:-.02em}
+.floss-state p{line-height:1.5}
+.floss-states-caption{margin-top:40px}
+.after-use-block{margin-top:154px}
+.after-use-header{margin-bottom:28px}
+.after-use-header h3{font-size:42px;line-height:1.5;font-weight:400}
+.after-use-header h3 em{color:#698b75}
+.compare-instruction{font:10px 'JetBrains Mono',monospace;letter-spacing:.08em}
+.design-b .photo-compare{height:430px;min-height:0}
+.design-b .photo-compare .compare-layer{padding:0}
+.design-b .photo-compare img{object-fit:contain;width:100%;height:100%}
+.design-b .products-section{margin:0;border-radius:0;background:#99c6c1}
+.design-b .products-section .section-header h2,.design-b .products-section .section-header h2 em{color:#b65b62}
+.design-b .products-section .section-lead{color:#fffaf4}
+.design-b .formula-stage{height:440px;min-height:440px}
+.design-b .formula-card.fluoride .pill{background:#b65b62;border-color:#b65b62}
+.design-b .formula-card.nhap .pill{background:#99c6c1;border-color:#99c6c1;color:#172e29}
+.design-b .story-grid{grid-template-columns:480fr 652fr;gap:100px}
+.design-b .story-arch{height:473px}
+.design-b .story-copy h2{font-size:54px;line-height:1;letter-spacing:-2.16px}
+.design-b .story-copy h2 em{display:inline-block;padding-top:8px;color:#698b75;letter-spacing:-1.08px}
+.design-b .story-copy .story-lead{margin:24px 0 28px;line-height:1.8;color:#172e29}
+.design-b .story-copy .spec-row dt,.design-b .story-copy .spec-row dd{color:#172e29}
+.design-b .guide-section{margin:0;border-radius:0}
+.design-b #guide .guide-steps{counter-reset:steps}
+.design-b #guide .guide-step{display:grid;grid-template-columns:55px 1fr;gap:32px;border-top:1px solid #172e2926;padding:24px 0}
+.design-b #guide .guide-step:last-child{border-bottom:1px solid #172e2926}
+.design-b #guide .guide-step::before{counter-increment:steps;content:counter(steps,decimal-leading-zero);font:10px 'JetBrains Mono',monospace;padding-top:9px}
+.design-b #guide .step-content{grid-template-columns:311fr 529fr;gap:32px}
+.design-b .end-cta{margin:0;padding-top:90px}
+.design-b .end-cta h2{font-size:70.4px;line-height:1;letter-spacing:-3.168px}
+.design-b .end-cta h2 em{line-height:1.1;letter-spacing:-1.408px}
+.design-b .end-cta .availability-note{max-width:590px;margin:18px auto 28px;line-height:1.75}
+.design-b .end-product-display{width:min(1045px,100%);height:546px;display:flex;justify-content:space-between;gap:40px;margin:56px auto 0}
+.finale-product{width:400px;height:480px;max-width:45%;flex-shrink:0;transform:rotate(-3deg)}
+.finale-product.nhap{transform:translateY(20px) rotate(3deg);--lid-light:#c7868b;--lid-dark:#855158}
+.finale-product>svg{width:100%;height:100%;display:block;overflow:visible}
+.finale-product.nhap .finale-nhap-box-opening{fill:#74484f}
+.design-b .footer-inner{grid-template-columns:513fr 257fr 366fr}
+@media(max-width:1020px){
+ .design-b .hero{gap:24px;padding-top:150px;grid-template-columns:1fr 1fr}
+ .design-b .hero h1{font-size:72px}.design-b .hero h1 em{font-size:78px}
+ .design-b .story-grid{gap:40px}.design-b .story-copy h2{font-size:42px}
+ .floss-state-image{height:290px}
+}
+@media(max-width:700px){
+ .design-b .section{padding:64px 0}.design-b .container{width:calc(100% - 40px)}
+ .design-b .site-header{height:64px;left:10px;right:10px}
+ .design-b .hero{padding:120px 20px 48px;grid-template-columns:1fr;text-align:center;gap:20px;min-height:0}
+ .design-b .hero .intro{margin:24px auto}.design-b .hero-controls{justify-content:center}
+ .design-b .hero-stage-visual{height:430px;min-height:430px}.design-b .hero-stage-visual .hero-pair{height:430px}
+ .design-b .section-header h2,#why .section-header h2,.design-b .products-section .section-header h2{font-size:42px}
+ .floss-state-image{height:auto;aspect-ratio:1.2}
+ .after-use-block{margin-top:80px}.after-use-header h3{font-size:32px}.design-b .photo-compare{height:340px}
+ .design-b .story-grid{grid-template-columns:1fr}.design-b .story-arch{height:360px}
+ .design-b #guide .guide-step{grid-template-columns:28px 1fr;gap:16px}.design-b #guide .step-content{grid-template-columns:1fr;gap:8px}
+ .design-b .end-cta{padding-top:64px}.design-b .end-cta h2{font-size:54px}
+ .design-b .end-product-display{height:auto;aspect-ratio:1.4;margin-top:36px;gap:0;padding:0 12px}
+ .finale-product{width:46%;max-width:46%;height:auto;aspect-ratio:400/480}
+ .design-b .footer-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:420px){.design-b .footer-inner{grid-template-columns:1fr}.design-b .hero h1{font-size:64px}.design-b .hero h1 em{font-size:70px}}
+
+/* Keep the complete unboxing stage visible on short desktop windows. */
+@media(min-width:701px) and (min-height:600px){
+ .design-b.flowing-hero .hero{height:100%;min-height:0;padding-top:20px;padding-bottom:20px}
+ .design-b.flowing-hero .hero-stage-visual{height:min(480px,calc(100svh - 136px));min-height:0}
+ .design-b.flowing-hero .hero-stage-visual .hero-pair{height:100%;min-height:0}
+}
+
+/* Size the pinned stage to the composition, not a tall/narrow viewport. */
+.design-b.flowing-hero{--hero-stage-height:min(560px,calc(100svh - 96px))}
+.design-b.flowing-hero .scroll-stage{height:var(--hero-stage-height)}
+.design-b.flowing-hero .scroll-scene{height:calc(var(--hero-stage-height) + var(--flow-travel))}
+.design-b.flowing-hero .hero{height:var(--hero-stage-height);min-height:0;align-content:center}
+@media(max-width:700px){
+ .design-b .hero{height:auto;min-height:0;padding-bottom:32px}
+}
+
+/* Keep actual floss centered and separate the labels from the moving seam. */
+.design-b .photo-compare{height:clamp(280px,34vw,430px);padding-bottom:48px;background:#fff}
+.design-b .photo-compare .compare-layer{bottom:48px;padding:18px 24px}
+.design-b .photo-compare .compare-photo{width:100%;height:100%;display:block;overflow:hidden;pointer-events:none}
+.design-b .photo-compare .compare-divider{bottom:48px}
+.design-b .photo-compare .compare-range{height:calc(100% - 48px);touch-action:pan-y}
+.design-b .photo-compare .compare-tag{bottom:12px;border:0;background:transparent;backdrop-filter:none;padding:0;max-width:40%;font-size:10px;line-height:20px}
+.design-b .photo-compare .tag-left{left:20px}
+.design-b .photo-compare .tag-right{right:20px}
+@media(max-width:700px){
+ .design-b .photo-compare .compare-layer{padding:12px 16px}
+ .design-b .photo-compare .compare-knob{width:36px;height:36px}
+}
+
+/* A soft, level contact shadow beneath each tilted package. */
+.finale-ground-shadow{filter:blur(3px);pointer-events:none}
+
+/* Collapse navigation before labels compete with the logo and CTA. */
+.design-b .site-header .logo,.design-b .site-header .header-actions{flex-shrink:0}
+.design-b .site-header nav a,.design-b .site-header .shop-btn{white-space:nowrap}
+@media(max-width:1100px){
+ .design-b .site-header{height:64px;padding:0 18px}
+ .design-b .site-header .menu-btn{display:inline-flex;flex-shrink:0}
+ .design-b .site-header nav{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;padding:18px;flex-direction:column;align-items:stretch;gap:6px;background:#fcfdfa;border:1px solid #172e291a;border-radius:22px;box-shadow:0 12px 30px #172e2912}
+ .design-b .site-header nav.open{display:flex}
+ .design-b .site-header nav a{font-size:14px;padding:12px 16px}
+ .design-b .site-header .header-actions{gap:10px}
+ .design-b .site-header .shop-btn{font-size:12px;padding:12px 16px;gap:8px}
+}
+@media(max-width:420px){
+ .design-b .site-header{padding:0 12px}
+ .design-b .site-header .logo{width:72px}
+ .design-b .site-header .logo img{width:72px}
+ .design-b .site-header .header-actions{gap:6px}
+ .design-b .site-header .shop-btn{font-size:11px;padding:10px 12px}
+ .design-b .site-header .shop-btn .brand-corner{display:none}
+}
+
+/* Current section and rollover are independent states, at every scroll position. */
+.design-b .site-header nav a,
+.design-b .site-header nav a.is-active,
+.design-b .site-header nav a:hover,
+.design-b .site-header nav a:focus-visible{background:transparent}
+.design-b .site-header nav a{color:#52655d}
+.design-b .site-header nav a.is-active,
+.design-b .site-header nav a:hover,
+.design-b .site-header nav a:focus-visible{color:#172e29}
+.design-b .site-header nav a .brand-corner{opacity:0;transform:translateY(3px) scale(.35)}
+.design-b .site-header nav a:hover .brand-corner,
+.design-b .site-header nav a:focus-visible .brand-corner{opacity:1;transform:translateY(-2px) scale(1)}
+@media(hover:none){
+ .design-b .site-header nav a:hover:not(:focus-visible) .brand-corner{opacity:0;transform:translateY(3px) scale(.35)}
+}

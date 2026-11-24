@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover MINSY expanding floss. Dental-hygienist-designed. Inspired by clinical practice. Made in Italy.">
+  <title>MINSY — Design B</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="journey.css">
+  <link rel="stylesheet" href="design-b.css">
+  <link rel="stylesheet" href="figma-page.css?v=nav-states-8">
+</head>
+<body class="design-b" id="top" data-formula="fluoride">
+  <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#top" aria-label="MINSY home">
+      <img src="assets/figma/f0fd1.png" alt="MINSY">
+    </a>
+
+    <nav id="navigation" aria-label="Primary">
+      <a href="#products" data-nav="products"><span>Products</span><svg class="brand-corner" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1 23C12 19 20 10 23 1V23Z"/></svg></a>
+      <a href="#why" data-nav="why"><span>Why MINSY</span><svg class="brand-corner" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1 23C12 19 20 10 23 1V23Z"/></svg></a>
+      <a href="#story" data-nav="story"><span>Our Story</span><svg class="brand-corner" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1 23C12 19 20 10 23 1V23Z"/></svg></a>
+      <a href="#guide" data-nav="guide"><span>Floss Guide</span><svg class="brand-corner" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1 23C12 19 20 10 23 1V23Z"/></svg></a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="formula-dot-toggle" role="group" aria-label="Preview brand formula palette">
+        <button type="button" class="dot-btn is-active" data-set-formula="fluoride" aria-pressed="true" aria-label="Preview Fluoride">
+          <span class="swatch swatch-mint"></span>
+        </button>
+        <button type="button" class="dot-btn" data-set-formula="nhap" aria-pressed="false" aria-label="Preview Nano-Hydroxyapatite">
+          <span class="swatch swatch-rose"></span>
+        </button>
+      </div>
+      <button type="button" class="shop-btn" data-shop>
+        <span>Check availability</span>
+        <svg class="brand-corner" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1 23C12 19 20 10 23 1V23Z"/></svg>
+      </button>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="navigation" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         01. HERO + SCROLL-CHOREOGRAPHED UNBOX & EXPAND STAGE
+    ========================================================== -->
+    <div class="scroll-scene" id="home">
+      <div class="scroll-stage">
+        <section class="hero" aria-label="MINSY Expanding Floss">
+          <div class="hero-ambient" aria-hidden="true">
+            <span class="ambient-orb orb-1"></span>
+            <span class="ambient-orb orb-2"></span>
+            <span class="editorial-gridlines"></span>
+          </div>
+
+          <!-- Editorial Phase Copy Stack -->
+          <div class="hero-copy-column">
+            <div class="phase-copy phase-1 is-visible">
+              <div class="hero-badge-row">
+                <p class="eyebrow">MINSY EXPANDING FLOSS</p>
+                <span class="mono-tag">DESIGNED WITH CARE</span>
+              </div>
+              <h1>Made to<br><em>expand</em><span class="period-accent">.</span></h1>
+              <p class="intro">Dental-Hygienist-Designed.<br>Inspired by Clinical Practice.</p>
+
+              <div class="hero-controls">
+                <a class="pill primary" href="#products">
+                  <span>Choose your formula</span>
+                  
+                </a>
+                <a class="hero-secondary" href="#why">Discover the difference</a>
+                <p class="formula-label">FIND YOUR DAILY ESSENTIAL</p>
+                <div class="hero-formula-switcher" role="group" aria-label="Spotlight formula">
+                  <button type="button" class="formula-chip is-active" data-set-formula="fluoride" aria-pressed="true">
+                    <i class="chip-dot mint"></i>
+                    <span>Fluoride</span>
+                  </button>
+                  <button type="button" class="formula-chip" data-set-formula="nhap" aria-pressed="false">
+                    <i class="chip-dot rose"></i>
+                    <span>Nano-Hydroxyapatite</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="phase-copy phase-2" aria-hidden="true">
+              <p class="eyebrow">SAME EXPANDING FLOSS · TWO OPTIONS</p>
+              <h2 id="hero-formula-title">Fluoride<span class="period-accent">.</span></h2>
+              <p class="phase-desc" id="hero-formula-desc">Formulated with Sodium Fluoride and Sodium Monofluorophosphate.</p>
+              <div class="spec-pills">
+                <span>37 m (40 yd)</span>
+                <span>Mint + Watermelon</span>
+                <span id="hero-pantone-tag">Fluoride formula</span>
+              </div>
+            </div>
+
+            <div class="phase-copy phase-3" aria-hidden="true">
+              <p class="eyebrow">EXPANDS WITH FRICTION</p>
+              <h2>One strand.<br><em>Hundreds of<br>filaments.</em></h2>
+              <p class="phase-desc">Multiple polyester filaments open with friction as they pass between teeth. Explore the movement below, then compare it with photos of the actual floss.</p>
+              <span class="caption">Illustration enlarged for detail. Filament count not actual.</span>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Box + Dispenser Stage -->
+          <div class="hero-stage-visual">
+            <div class="stage-ring" aria-hidden="true"></div>
+            <div class="product-pair hero-pair fluoride" id="hero-pair" aria-label="MINSY box and matching dispenser">
+              <svg class="hero-product-art" viewBox="170 70 400 610" role="img" aria-label="MINSY box opening to reveal its matching floss dispenser">
+                <defs>
+                  <linearGradient id="hero-lid-shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="var(--lid-light, #91bdb8)"/><stop offset="1" stop-color="var(--lid-dark, #557e78)"/></linearGradient>
+                  <clipPath id="hero-body-mask"><path d="M748 371 L1486 499 L1651 419 L1628 1376 L1471 1488 L772 1304 Z"/></clipPath>
+                  <clipPath id="hero-lid-mask"><path d="M748 371 L930 301 L1651 419 L1486 499 Z"/></clipPath>
+                </defs>
+                <ellipse cx="365" cy="664" rx="143" ry="11" fill="#334540" opacity=".07"/>
+                <g transform="translate(0 210) scale(.3)">
+                  <path d="M748 371 L930 301 L1651 419 L1486 499 Z" class="hero-box-opening" fill="#486761"/>
+                  <g id="hero-box-lid">
+                    <image id="hero-lid-art" href="assets/fluoride-0.jpg" width="2400" height="1800" clip-path="url(#hero-lid-mask)"/>
+                    <path id="hero-lid-inside" d="M748 371 L930 301 L1651 419 L1486 499 Z" fill="url(#hero-lid-shade)" opacity="0"/>
+                  </g>
+                </g>
+                <svg id="hero-dispenser" x="286" y="430" width="178" height="213" viewBox="500 195 330 395" overflow="hidden">
+                  <image href="assets/container.png" width="1080" height="1000"/>
+                </svg>
+                <g transform="translate(0 210) scale(.3)">
+                  <image id="hero-box-body" href="assets/fluoride-0.jpg" width="2400" height="1800" clip-path="url(#hero-body-mask)"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Dynamic Multi-Filament Expanding Thread SVG -->
+          
+
+          <!-- Phase Navigation Rail -->
+          
+
+          <div class="scroll-progress" aria-hidden="true"><i></i></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Kinetic Editorial Marquee -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker-track">
+        <span>ONE STRAND. HUNDREDS OF FILAMENTS.</span><i class="tri-mark"></i>
+        <span>MADE TO EXPAND WITH FRICTION.</span><i class="tri-mark"></i>
+        <span>DENTAL-HYGIENIST-DESIGNED.</span><i class="tri-mark"></i>
+        <span>MADE IN ITALY.</span><i class="tri-mark"></i>
+        <span>ONE STRAND. HUNDREDS OF FILAMENTS.</span><i class="tri-mark"></i>
+        <span>MADE TO EXPAND WITH FRICTION.</span><i class="tri-mark"></i>
+        <span>DENTAL-HYGIENIST-DESIGNED.</span><i class="tri-mark"></i>
+        <span>MADE IN ITALY.</span><i class="tri-mark"></i>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         02. WHY MINSY — EXPANDS WITH FRICTION + THREE STATES LAB
+    ========================================================== -->
+    <section class="section lab-section" id="why">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-meta-col">
+            <span class="section-index">WHY MINSY</span>
+          </div>
+          <div class="section-title-col">
+            <h2>A little friction.<br><em>A fuller strand.</em></h2>
+            <p class="section-lead">See how the strand opens with friction, then compare the actual floss before and after use.</p>
+          </div>
+        </div>
+
+        <div class="floss-states reveal" aria-label="Twisted. Open. Gathered.">
+          <article class="floss-state">
+            <div class="floss-state-image state-rest"><img src="assets/figma/f9bb1.png" alt="MINSY floss twisted and compact at rest" loading="lazy"></div>
+            <h3>At Rest</h3>
+            <p>Twisted &amp; Compact</p>
+          </article>
+          <article class="floss-state">
+            <div class="floss-state-image state-open"><img src="assets/figma/ef435.png" alt="Actual MINSY floss with opened filaments after use" loading="lazy"></div>
+            <h3>In Use</h3>
+            <p>Opens Between Teeth</p>
+          </article>
+          <article class="floss-state">
+            <div class="floss-state-image state-tension"><img src="assets/figma/606d3.png" alt="MINSY floss gathered under tension" loading="lazy"></div>
+            <h3>Under Tension</h3>
+            <p>Gathers Back</p>
+          </article>
+        </div>
+        <p class="floss-states-caption">Photos of actual floss, cropped and enlarged for detail.</p>
+
+        <!-- Before / After Real Photo Comparison Curtain -->
+        <div class="after-use-block reveal">
+          <div class="after-use-header">
+            <div>
+              <p class="eyebrow">ACTUAL MINSY FLOSS · PHOTO</p>
+              <h3>What it looks like <em>after use.</em></h3>
+            </div>
+            <span class="compare-instruction">DRAG TO COMPARE</span>
+          </div>
+
+          <div class="photo-compare" id="photo-compare" data-view="split" style="--split: 50%;">
+            <div class="compare-layer layer-after">
+              <svg class="compare-photo" viewBox="0 0 1240 994" role="img" aria-label="After use: opened MINSY floss filaments"><image href="assets/figma/ef6b1.png" width="2400" height="994"/></svg>
+            </div>
+            <div class="compare-layer layer-before">
+              <img src="assets/figma/87afb.png" alt="At rest actual MINSY floss photo, twisted and compact" loading="lazy">
+            </div>
+            <span class="compare-tag tag-left">AT REST</span>
+            <span class="compare-tag tag-right">AFTER USE</span>
+            <div class="compare-divider" aria-hidden="true">
+              <span class="compare-knob">↔</span>
+            </div>
+            <input type="range" class="compare-range" id="compare-range" min="8" max="92" value="50" aria-label="Drag to compare MINSY floss at rest versus after use">
+          </div>
+          <p class="caption">Photos of actual floss, cropped and enlarged for detail.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         03. CHOOSE YOUR FORMULA (PRODUCTS)
+    ========================================================== -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-meta-col">
+            <span class="section-index">PRODUCTS</span>
+            <p class="eyebrow">CHOOSE YOUR FORMULA</p>
+          </div>
+          <div class="section-title-col">
+            <h2>One floss.<br><em>Two formulas.</em></h2>
+            <p class="section-lead">Both options share the expanding polyester filament, Mint + Watermelon flavor and 37 m length. The difference is the added ingredient formulation.</p>
+          </div>
+        </div>
+
+        <div class="formula-grid">
+          <!-- Fluoride Card -->
+          <article class="formula-card fluoride reveal">
+            <div class="card-top-bar">
+              
+              <span class="mono-tag">37 M (40 YD)</span>
+            </div>
+
+            <div class="formula-stage">
+              <div class="stage-halo" aria-hidden="true"></div>
+              <div class="product-pair fluoride" aria-label="Fluoride box and matching dispenser">
+                <div class="pack">
+                  <img src="assets/fluoride-0.jpg" alt="MINSY Fluoride Expanding Floss box">
+                </div>
+                <div class="dispenser fluoride">
+                  <img src="assets/container.png" alt="MINSY Fluoride translucent floss dispenser">
+                </div>
+              </div>
+            </div>
+
+            <div class="formula-copy">
+              <div class="formula-title-row">
+                <h3>Fluoride</h3>
+                <span class="flavor-tag">Mint + Watermelon</span>
+              </div>
+              <p>Formulated with Sodium Fluoride and Sodium Monofluorophosphate.</p>
+              <div class="card-footer-row">
+                <button type="button" class="pill dark" data-shop data-shop-formula="Fluoride">
+                  <span>Check availability</span>
+                  
+                </button>
+                <span class="origin-note">Made in Italy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nano-Hydroxyapatite Card -->
+          <article class="formula-card nhap reveal">
+            <div class="card-top-bar">
+              
+              <span class="mono-tag">37 M (40 YD)</span>
+            </div>
+
+            <div class="formula-stage">
+              <div class="stage-halo" aria-hidden="true"></div>
+              <div class="product-pair nhap" aria-label="Nano-Hydroxyapatite box and matching dispenser">
+                <div class="pack">
+                  <img src="assets/nhap-0.jpg" alt="MINSY Nano-Hydroxyapatite Expanding Floss box">
+                </div>
+                <div class="dispenser nhap">
+                  <img src="assets/container.png" alt="MINSY Nano-Hydroxyapatite translucent floss dispenser">
+                </div>
+              </div>
+            </div>
+
+            <div class="formula-copy">
+              <div class="formula-title-row">
+                <h3>Nano-Hydroxyapatite</h3>
+                <span class="flavor-tag">Mint + Watermelon</span>
+              </div>
+              <p>Formulated with Nano-Hydroxyapatite.</p>
+              <div class="card-footer-row">
+                <button type="button" class="pill dark" data-shop data-shop-formula="Nano-Hydroxyapatite">
+                  <span>Check availability</span>
+                  
+                </button>
+                <span class="origin-note">Made in Italy</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Shared Ingredients Architectural Strip -->
+      </div>
+    </section>
+
+    <!-- =========================================================
+         04. SEE IT UP CLOSE — OPTICAL LOUPE STUDIO
+    ========================================================== -->
+
+
+    <!-- =========================================================
+         05. OUR STORY — MADE IN ITALY
+    ========================================================== -->
+    <section class="section story-section" id="story">
+      <div class="container story-grid">
+        <div class="story-visual reveal">
+          <div class="story-arch">
+            <img id="story-parallax-img" src="assets/figma/ef435.png" alt="Actual white and orange MINSY expanding floss" loading="lazy">
+            <span class="story-seal">
+              <span>MADE IN ITALY</span>
+              <i>·</i>
+              <span>ACTUAL FLOSS</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="story-copy reveal">
+          <span class="section-index light">OUR STORY</span>
+          <p class="eyebrow">MADE IN ITALY</p>
+          <h2>Inspired by<br>clinical practice.<br><em>Made in Italy.</em></h2>
+          <p class="story-lead">Designed by a dental hygienist and inspired by clinical practice, MINSY brings a considered approach to an everyday routine. Designed in New York and made by a specialist Italian manufacturer.</p>
+
+          <dl class="clinical-specs">
+            <div class="spec-row">
+              <dt>Filament</dt>
+              <dd>Polyester multifilament. Not nylon, not PTFE.</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Manufacturing</dt>
+              <dd>Produced by a specialist Italian manufacturer.</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Documentation</dt>
+              <dd>Test and certification documents available on request.</dd>
+            </div>
+            <div class="spec-row">
+              <dt>Origin</dt>
+              <dd>Designed in New York · Made in Italy.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         06. HOW TO FLOSS — INTERACTIVE 5-STEP EDITORIAL GUIDE
+    ========================================================== -->
+    <section class="section guide-section" id="guide">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-meta-col">
+            <span class="section-index">FLOSS GUIDE</span>
+            <p class="eyebrow">HOW TO FLOSS</p>
+          </div>
+          <div class="section-title-col">
+            <h2>Gently guide.<br><em>Curve. Clean.</em></h2>
+          </div>
+        </div>
+
+        <div class="guide-layout">
+          <ol class="guide-steps" id="guide-steps">
+            <li class="guide-step">
+              
+              <div class="step-content">
+                <h3>Measure your length</h3>
+                <p>Use approximately 16–18 in / 40–45 cm of floss.</p>
+              </div>
+            </li>
+            <li class="guide-step">
+              
+              <div class="step-content">
+                <h3>Gently guide</h3>
+                <p>Gently guide the floss between teeth.</p>
+              </div>
+            </li>
+            <li class="guide-step">
+              
+              <div class="step-content">
+                <h3>Curve into a C-shape</h3>
+                <p>Curve the floss into a C-shape around each tooth.</p>
+              </div>
+            </li>
+            <li class="guide-step">
+              
+              <div class="step-content">
+                <h3>Clean with care</h3>
+                <p>Gently clean beneath the gumline.</p>
+              </div>
+            </li>
+            <li class="guide-step">
+              
+              <div class="step-content">
+                <h3>Refresh for each tooth</h3>
+                <p>Use a fresh section of floss for each tooth.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         07. EDITORIAL FINALE CTA
+    ========================================================== -->
+    <section class="end-cta">
+      <div class="container end-inner reveal">
+        <p class="eyebrow">SAME EXPANDING FLOSS · TWO INGREDIENT OPTIONS</p>
+        <h2>Your next<br><em>daily ritual.</em></h2>
+        <p class="availability-note">Amazon availability is coming soon. In the meantime, explore the two formulas.</p>
+        <div class="end-actions">
+          <a class="pill light" href="#products">
+            <span>Compare both formulas</span>
+            
+          </a>
+          <button type="button" class="pill outline-light" data-shop>
+            <span>Check availability</span>
+            
+          </button>
+        </div>
+      </div>
+      <div class="end-product-display" aria-label="MINSY boxes opening to reveal matching dispensers"><div class="finale-product fluoride" data-unbox="fluoride"><svg class="finale-fluoride-product-art" viewBox="170 70 400 610" role="img" aria-label="MINSY box opening to reveal its matching floss dispenser">
+                <defs>
+                  <linearGradient id="finale-fluoride-lid-shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="var(--lid-light, #91bdb8)"/><stop offset="1" stop-color="var(--lid-dark, #557e78)"/></linearGradient>
+                  <clipPath id="finale-fluoride-body-mask"><path d="M748 371 L1486 499 L1651 419 L1628 1376 L1471 1488 L772 1304 Z"/></clipPath>
+                  <clipPath id="finale-fluoride-lid-mask"><path d="M748 371 L930 301 L1651 419 L1486 499 Z"/></clipPath>
+                </defs>
+                <ellipse class="finale-ground-shadow" cx="365" cy="664" rx="112" ry="6" fill="#334540" opacity=".045" transform="rotate(3 365 664)"/>
+                <g transform="translate(0 210) scale(.3)">
+                  <path d="M748 371 L930 301 L1651 419 L1486 499 Z" class="finale-fluoride-box-opening" fill="#486761"/>
+                  <g id="finale-fluoride-box-lid">
+                    <image id="finale-fluoride-lid-art" href="assets/fluoride-0.jpg" width="2400" height="1800" clip-path="url(#finale-fluoride-lid-mask)"/>
+                    <path id="finale-fluoride-lid-inside" d="M748 371 L930 301 L1651 419 L1486 499 Z" fill="url(#finale-fluoride-lid-shade)" opacity="0"/>
+                  </g>
+                </g>
+                <svg id="finale-fluoride-dispenser" x="286" y="430" width="178" height="213" viewBox="500 195 330 395" overflow="hidden">
+                  <image href="assets/container.png" width="1080" height="1000"/>
+                </svg>
+                <g transform="translate(0 210) scale(.3)">
+                  <image id="finale-fluoride-box-body" href="assets/fluoride-0.jpg" width="2400" height="1800" clip-path="url(#finale-fluoride-body-mask)"/>
+                </g>
+              </svg></div><div class="finale-product nhap" data-unbox="nhap"><svg class="finale-nhap-product-art" viewBox="170 70 400 610" role="img" aria-label="MINSY box opening to reveal its matching floss dispenser">
+                <defs>
+                  <linearGradient id="finale-nhap-lid-shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="var(--lid-light, #91bdb8)"/><stop offset="1" stop-color="var(--lid-dark, #557e78)"/></linearGradient>
+                  <clipPath id="finale-nhap-body-mask"><path d="M748 371 L1486 499 L1651 419 L1628 1376 L1471 1488 L772 1304 Z"/></clipPath>
+                  <clipPath id="finale-nhap-lid-mask"><path d="M748 371 L930 301 L1651 419 L1486 499 Z"/></clipPath>
+                </defs>
+                <ellipse class="finale-ground-shadow" cx="365" cy="664" rx="112" ry="6" fill="#334540" opacity=".045" transform="rotate(-3 365 664)"/>
+                <g transform="translate(0 210) scale(.3)">
+                  <path d="M748 371 L930 301 L1651 419 L1486 499 Z" class="finale-nhap-box-opening" fill="#486761"/>
+                  <g id="finale-nhap-box-lid">
+                    <image id="finale-nhap-lid-art" href="assets/nhap-0.jpg" width="2400" height="1800" clip-path="url(#finale-nhap-lid-mask)"/>
+                    <path id="finale-nhap-lid-inside" d="M748 371 L930 301 L1651 419 L1486 499 Z" fill="url(#finale-nhap-lid-shade)" opacity="0"/>
+                  </g>
+                </g>
+                <svg id="finale-nhap-dispenser" x="286" y="430" width="178" height="213" viewBox="90 195 330 395" overflow="hidden">
+                  <image href="assets/container.png" width="1080" height="1000"/>
+                </svg>
+                <g transform="translate(0 210) scale(.3)">
+                  <image id="finale-nhap-box-body" href="assets/nhap-0.jpg" width="2400" height="1800" clip-path="url(#finale-nhap-body-mask)"/>
+                </g>
+              </svg></div></div>
+      <svg class="end-wave" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 12 Q30 0 60 12 T120 12 T180 12 T240 12 T300 12 T360 12 T420 12 T480 12 T540 12 T600 12 T660 12 T720 12 T780 12 T840 12 T900 12 T960 12 T1020 12 T1080 12 T1140 12 T1200 12 V24 H0Z"/></svg>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="#top" aria-label="MINSY home">
+          <img src="assets/figma/f0fd1.png" alt="MINSY">
+        </a>
+        <p class="footer-tagline">MINSY Expanding Floss · Dental-Hygienist-Designed · Made in Italy</p>
+      </div>
+      <div class="footer-links">
+        <a href="#products">Products</a>
+        <a href="#why">Why MINSY</a>
+        <a href="#story">Our Story</a>
+        <a href="#guide">Floss Guide</a>
+      </div>
+      <div class="footer-meta">
+        <span class="mono-tag">BYMINSY.COM · NEW YORK</span>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible Shop Modal -->
+  <dialog id="shop-dialog" aria-labelledby="shop-dialog-title">
+    <button type="button" class="dialog-close" aria-label="Close dialog">×</button>
+    <p class="eyebrow">MINSY · BYMINSY.COM</p>
+    <h2 id="shop-dialog-title">Coming to Amazon</h2>
+    <p class="dialog-copy" id="shop-dialog-copy">Our Amazon storefront link is coming soon. Explore both Fluoride and Nano-Hydroxyapatite formulas in the meantime.</p>
+    <div class="dialog-swatches">
+      <span class="pantone-badge"><i class="swatch swatch-mint"></i> Fluoride · 37 m</span>
+      <span class="pantone-badge"><i class="swatch swatch-rose"></i> Nano-Hydroxyapatite · 37 m</span>
+    </div>
+    <button type="button" class="pill dark close-dialog">Continue exploring</button>
+  </dialog>
+
+  <script src="app.js?v=nav-states-8"></script>
+  <script src="journey.js?v=compact-hero-4"></script>
+</body>
+</html>
