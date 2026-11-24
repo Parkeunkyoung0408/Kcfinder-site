@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'dist/**'
+      - 'minsy-b/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -29,11 +29,11 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Verify site entry point
-        run: test -s dist/index.html
+        run: test -s minsy-b/index.html
       - name: Upload website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: minsy-b
           name: github-pages-${{ github.run_attempt }}
       - name: Deploy to GitHub Pages
         id: deployment
