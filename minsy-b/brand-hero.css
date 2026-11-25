@@ -59,3 +59,6 @@
 .design-b .site-header .logo svg{display:block;width:100px;height:auto}
 @media(max-width:520px){.design-b .site-header .logo svg{width:78px}}
 @media(max-width:420px){.design-b .site-header .logo svg{width:72px}}
+
+/* A real block anchor is required on mobile; display:contents has no scroll box. */
+.design-b .scroll-scene{display:block}
