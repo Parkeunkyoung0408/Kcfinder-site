@@ -62,3 +62,23 @@
 
 /* A real block anchor is required on mobile; display:contents has no scroll box. */
 .design-b .scroll-scene{display:block}
+
+/* Hero-only motion: staggered typography and scroll-linked camera drift. */
+.brand-hero .brand-wordmark{animation:none;transform:translate3d(0,var(--brand-logo-y,0px),0)}
+.brand-hero .brand-glyph{animation:brand-letter-in 1s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(.12s + var(--letter)*.10s);transform-box:fill-box;transform-origin:center}
+@keyframes brand-letter-in{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.brand-hero .brand-intro{animation:none;transform:translate3d(0,var(--brand-copy-y,0px),0)}
+.brand-hero .brand-char{display:inline-block;animation:brand-char-in .65s ease-out both;animation-delay:calc(.45s + var(--char)*.012s)}
+@keyframes brand-char-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.brand-hero .brand-discover{animation:brand-enter .8s 1.05s ease-out backwards}
+.brand-hero .brand-backdrop{transform:translate3d(var(--brand-x,0px),calc(var(--brand-y,0px) + var(--brand-scroll,0px)),0) scale(var(--brand-scale,1.025));transform-origin:65% 55%}
+.brand-hero .brand-backdrop img{animation:brand-camera-in 2.1s cubic-bezier(.22,1,.36,1) both;transform-origin:65% 55%}
+@keyframes brand-camera-in{from{transform:scale(1.08)}to{transform:scale(1)}}
+@media(max-width:900px){
+ .brand-hero .brand-backdrop{inset:-10px;will-change:transform}
+ .brand-hero .brand-backdrop img{animation-duration:1.4s}
+}
+@media(prefers-reduced-motion:reduce){
+ .brand-hero .brand-wordmark,.brand-hero .brand-intro,.brand-hero .brand-glyph,.brand-hero .brand-char,.brand-hero .brand-discover,.brand-hero .brand-backdrop img{animation:none;transform:none}
+ .brand-hero .brand-backdrop{transform:none;will-change:auto}
+}
