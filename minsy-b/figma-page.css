@@ -206,7 +206,7 @@
 .ingredients-copy dl{margin:0}
 .ingredient-row{position:relative;padding:22px 0 22px 64px;border-bottom:1px solid #172e2933}
 .ingredient-row:last-child{border-bottom:0}
-.ingredient-icon{position:absolute;left:0;top:22px;width:40px;height:40px;color:#52655d;background:none;filter:none}
+.ingredient-icon{position:absolute;left:0;top:22px;width:40px;height:40px;color:#a3c5c1;background:none;filter:none}
 .ingredient-row dt{font-size:20px;font-weight:600;line-height:1.35;margin:0}
 .ingredient-row dd{font-size:15px;line-height:1.65;margin:8px 0 0;color:#52655d}
 @media(max-width:900px){
