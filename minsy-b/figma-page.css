@@ -179,8 +179,8 @@
 .design-b .after-use-block{margin-top:48px}
 .design-b .after-use-header h3{font-size:clamp(24px,2.6vw,38px);line-height:1.2}
 .source-ingredients{margin-top:48px;padding:24px 0;border-top:1px solid #172e2933;color:#172e29}
-.source-ingredients summary{font-size:20px;cursor:pointer;padding:8px 0}
-.source-ingredients dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:28px 0 0}
+.source-ingredients h3{font-size:20px;font-weight:500;line-height:1.4;margin:0;padding:8px 0}
+.source-ingredients dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin:28px 0 0}
 .source-ingredients dt{font-size:16px;font-weight:600;margin-bottom:10px}
 .source-ingredients dd{margin:0;font-size:14px;line-height:1.7}
 .design-b #guide .step-content{display:block}
