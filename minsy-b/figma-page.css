@@ -224,3 +224,18 @@
  .ingredient-row{padding-left:42px}
  .ingredient-row dt{font-size:18px}
 }
+
+/* A compact origin statement separates ingredients from the floss guide. */
+.design-b .origin-section{padding:64px 0;background:#fcfdfa}
+.origin-summary{text-align:center}
+.design-b .origin-summary h2{font-size:clamp(32px,3.2vw,44px);line-height:1.12;letter-spacing:-.035em;margin:0 0 22px}
+.origin-summary h2 em{color:#698b75}
+.origin-summary p{margin:0}
+.origin-summary .origin-manufacturer{font-size:18px;line-height:1.65;color:#172e29}
+.origin-summary .origin-material{margin-top:8px;font-size:16px;line-height:1.65;color:#52655d}
+.origin-summary .origin-documentation{margin-top:20px;font-size:13px;line-height:1.65;color:#52655d}
+@media(max-width:700px){
+ .design-b .origin-section{padding:48px 0}
+ .origin-summary .origin-manufacturer{font-size:17px}
+ .origin-summary .origin-material{font-size:15px}
+}
