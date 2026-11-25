@@ -1,9 +1,9 @@
 /* Figma iYfVxNLP5Ze0kjuENdJJjx / 1:208. Motion uses the existing unboxing artwork. */
 .design-b .container{width:min(1232px,calc(100% - 48px))}
 .design-b .section{padding:100px 0}
-.design-b .site-header{left:16px;right:16px;height:81px;box-shadow:none;border:0}
+.design-b .site-header{position:fixed;left:0;right:0;top:16px;width:min(1288px,calc(100% - 48px));margin-inline:auto;height:72px;box-shadow:none;border:0}
 .design-b .formula-dot-toggle,.hero-badge-row,.hero-secondary,.formula-label,.ticker,.section-meta-col,.story-copy>.section-index,.story-copy>.eyebrow,.end-inner>.eyebrow,.after-use-header .eyebrow{display:none}
-.design-b .hero{background:#edf6ee;min-height:760px;padding:173px max(24px,calc((100vw - 1232px)/2)) 64px;grid-template-columns:1.25fr 1fr;gap:72px}
+.design-b .hero{background:#edf6ee;min-height:680px;padding:128px max(24px,calc((100vw - 1232px)/2)) 64px;grid-template-columns:1.25fr 1fr;gap:72px}
 .design-b.flowing-hero .hero{min-height:0;padding-top:40px;padding-bottom:40px}
 .design-b .hero h1{font-size:94.08px;line-height:.9;letter-spacing:-5.174px;font-weight:500}
 .design-b .hero h1 em{font-size:99.725px;line-height:1.08;letter-spacing:-1.994px}
@@ -68,7 +68,7 @@
 }
 @media(max-width:700px){
  .design-b .section{padding:64px 0}.design-b .container{width:calc(100% - 40px)}
- .design-b .site-header{height:64px;left:10px;right:10px}
+ .design-b .site-header{height:64px;top:10px;width:calc(100% - 20px)}
  .design-b .hero{padding:120px 20px 48px;grid-template-columns:1fr;text-align:center;gap:20px;min-height:0}
  .design-b .hero .intro{margin:24px auto}.design-b .hero-controls{justify-content:center}
  .design-b .hero-stage-visual{height:430px;min-height:430px}.design-b .hero-stage-visual .hero-pair{height:430px}
@@ -84,12 +84,12 @@
 }
 @media(max-width:420px){.design-b .footer-inner{grid-template-columns:1fr}.design-b .hero h1{font-size:64px}.design-b .hero h1 em{font-size:70px}}
 
-/* The pinned scene fills the viewport; its scroll runway stays behind it. */
-.design-b.flowing-hero{--hero-stage-height:100svh}
+/* Bound the pinned composition on tall screens; preserve the animation runway. */
+.design-b.flowing-hero{--hero-stage-height:min(760px,100svh)}
 .design-b.flowing-hero .scroll-stage{position:sticky;top:0;height:var(--hero-stage-height)}
 .design-b.flowing-hero .scroll-scene{height:calc(var(--hero-stage-height) + var(--flow-travel))}
-.design-b.flowing-hero .hero{height:var(--hero-stage-height);min-height:0;padding-top:112px;padding-bottom:32px;align-content:center}
-.design-b.flowing-hero .hero-stage-visual{height:min(520px,calc(100svh - 144px));min-height:0}
+.design-b.flowing-hero .hero{height:var(--hero-stage-height);min-height:0;padding-top:128px;padding-bottom:32px;align-content:start}
+.design-b.flowing-hero .hero-stage-visual{height:min(520px,calc(var(--hero-stage-height) - 160px));min-height:0}
 .design-b.flowing-hero .hero-stage-visual .hero-pair{height:100%;min-height:0}
 @media(max-width:1100px){
  .design-b .scroll-scene,.design-b .scroll-stage{display:contents;height:auto}
