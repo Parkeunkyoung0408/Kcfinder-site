@@ -29,7 +29,7 @@
     hero.style.setProperty('--brand-x', x.toFixed(2) + 'px');
     hero.style.setProperty('--brand-y', y.toFixed(2) + 'px');
     hero.style.setProperty('--brand-scroll', (progress * (large ? 36 : 10)).toFixed(2) + 'px');
-    hero.style.setProperty('--brand-scale', (1.025 + progress * (large ? .10 : .025)).toFixed(4));
+    hero.style.setProperty('--brand-scale', (1.025 + clamp(progress / .75) * (large ? .24 : .07)).toFixed(4));
     hero.style.setProperty('--brand-logo-y', (-progress * (large ? 22 : 6)).toFixed(2) + 'px');
     hero.style.setProperty('--brand-copy-y', (-progress * (large ? 42 : 12)).toFixed(2) + 'px');
     if (progress !== targetProgress || x !== (large ? targetX : 0) || y !== (large ? targetY : 0)) frame = requestAnimationFrame(paint);
