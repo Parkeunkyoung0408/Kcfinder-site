@@ -204,9 +204,9 @@
 .ingredients-copy{align-self:center;min-width:0}
 .ingredients-copy h3{font-size:clamp(40px,4.2vw,60px);font-weight:700;line-height:1.06;letter-spacing:-.045em;margin:0 0 36px}
 .ingredients-copy dl{margin:0}
-.ingredient-row{position:relative;padding:22px 0 22px 58px;border-bottom:1px solid #172e2933}
+.ingredient-row{position:relative;padding:22px 0 22px 64px;border-bottom:1px solid #172e2933}
 .ingredient-row:last-child{border-bottom:0}
-.ingredient-icon{position:absolute;left:0;top:23px;width:32px;height:32px;color:#52655d}
+.ingredient-icon{position:absolute;left:0;top:22px;width:40px;height:40px;color:#52655d;background:none;filter:none}
 .ingredient-row dt{font-size:20px;font-weight:600;line-height:1.35;margin:0}
 .ingredient-row dd{font-size:15px;line-height:1.65;margin:8px 0 0;color:#52655d}
 @media(max-width:900px){
@@ -220,8 +220,8 @@
  .ingredients-visual{height:300px;padding:20px 12px 60px}
  .ingredients-visual figcaption{left:20px;bottom:20px;padding:10px 14px;font-size:11px}
  .ingredients-copy h3{font-size:40px}
- .ingredient-row{padding-left:46px}
- .ingredient-icon{width:28px;height:28px;top:22px}
+ .ingredient-row{padding-left:54px}
+ .ingredient-icon{width:34px;height:34px;top:21px}
  .ingredient-row dt{font-size:18px}
 }
 
