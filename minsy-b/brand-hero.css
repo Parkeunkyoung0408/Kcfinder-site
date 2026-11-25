@@ -1,0 +1,55 @@
+/* Approved mint-glass brand hero. Text remains accessible, separate from artwork. */
+.brand-hero{position:relative;isolation:isolate;overflow:hidden;background:#f3e8d8;color:#073d2e;min-height:680px;height:min(900px,100svh)}
+.brand-backdrop{position:absolute;inset:-22px;z-index:-2;transform:translate3d(var(--brand-x,0px),calc(var(--brand-y,0px) + var(--brand-scroll,0px)),0) scale(1.035);will-change:transform}
+.brand-backdrop img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.brand-content{position:relative;width:min(1440px,100%);margin:auto;padding:clamp(150px,18vh,205px) 60px 140px}
+.brand-wordmark{width:62%;max-width:840px;margin:0 0 26px;line-height:1;mix-blend-mode:multiply}
+.brand-wordmark svg{width:100%;height:auto;display:block}
+.brand-intro{font-size:clamp(20px,2.1vw,30px);line-height:1.5;letter-spacing:-.035em;margin:0 0 36px}
+.brand-discover{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:54px;padding:15px 28px;border-radius:99px;background:#073d2e;color:#fffdf4;font-size:17px;font-weight:600;text-decoration:none;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+.discover-mark{width:10px;height:10px;background:#ff713c;border-radius:0 0 2px 0;clip-path:polygon(100% 0,100% 100%,0 100%);transition:transform .25s ease}
+.brand-discover:hover{background:#135641;transform:translateY(-3px);box-shadow:0 10px 24px #073d2e20}
+.brand-discover:hover .discover-mark{transform:rotate(-15deg) scale(1.2)}
+.brand-discover:focus-visible,.brand-scroll:focus-visible{outline:3px solid #073d2e;outline-offset:6px}
+.brand-scroll{position:absolute;bottom:28px;left:max(60px,calc((100vw - 1320px)/2));display:flex;align-items:center;gap:18px;color:#073d2e;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:.03em}
+.scroll-stroke{display:block;width:1px;height:28px;background:#073d2e66;position:relative;overflow:hidden}
+.scroll-stroke::after{content:"";position:absolute;top:-12px;left:0;width:1px;height:12px;background:#073d2e;animation:brand-scroll-cue 2s ease-in-out 3}
+@keyframes brand-scroll-cue{to{transform:translateY(40px)}}
+@keyframes brand-enter{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.brand-wordmark{animation:brand-enter .8s ease-out both}
+.brand-intro{animation:brand-enter .8s .12s ease-out both}
+.brand-discover{animation:brand-enter .8s .24s ease-out backwards}
+.design-b .site-header{transition:background .3s ease,box-shadow .3s ease; background:transparent;backdrop-filter:none}
+.design-b .site-header.is-scrolled{background:rgba(252,253,250,.96);backdrop-filter:blur(16px);box-shadow:0 4px 24px #172e2910}
+.design-b .site-header .logo{mix-blend-mode:multiply}
+.design-b .hero .phase-1 h2{font-size:clamp(52px,5vw,76px);font-weight:500;line-height:1;letter-spacing:-.045em;margin:0}
+.design-b .hero .phase-1 h2 em{font-family:'Instrument Serif',serif;font-weight:400;color:#698b75}
+#discover{scroll-margin-top:88px}
+#why,#products,#ingredients,#story,#guide{scroll-margin-top:96px}
+@media(min-width:1600px){.brand-hero{height:900px}.brand-content{padding-top:190px}}
+@media(max-width:900px){
+ .brand-hero{height:auto;min-height:760px}
+ .brand-content{padding:145px 28px 360px;text-align:center}
+ .brand-wordmark{width:min(680px,100%);margin:0 auto 26px}
+ .brand-intro{font-size:clamp(18px,3.2vw,26px);margin-bottom:26px}
+ .brand-backdrop{inset:0;transform:none;will-change:auto}
+ .brand-backdrop img{object-position:62% bottom}
+ .brand-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#f8efdfeb 0%,#f8efdfd9 44%,#f8efdf00 70%);pointer-events:none}
+ .brand-scroll{left:50%;transform:translateX(-50%);white-space:nowrap;bottom:24px}
+ .design-b .hero .phase-1 h2{font-size:clamp(48px,8vw,70px)}
+}
+@media(max-width:520px){
+ .brand-hero{min-height:690px}
+ .brand-content{padding:132px 24px 320px}
+ .brand-wordmark{margin-bottom:24px}
+ .brand-intro{font-size:18px;letter-spacing:-.03em;line-height:1.6}
+ .brand-discover{font-size:15px;min-height:50px;padding:13px 24px}
+ .brand-backdrop img{object-position:63% bottom}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .brand-wordmark,.brand-intro,.brand-discover,.scroll-stroke::after{animation:none}
+ .brand-backdrop{transform:none;will-change:auto}
+ .brand-discover,.discover-mark,.design-b .site-header{transition:none}
+ .brand-discover:hover{transform:none}
+}

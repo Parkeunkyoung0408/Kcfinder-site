@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="journey.css">
   <link rel="stylesheet" href="design-b.css">
-  <link rel="stylesheet" href="figma-page.css?v=mint-icons-18">
+  <link rel="stylesheet" href="figma-page.css?v=brand-hero-19">
+  <link rel="preload" as="image" href="assets/brand-hero.webp" fetchpriority="high">
+  <link rel="stylesheet" href="brand-hero.css?v=19">
 </head>
 <body class="design-b" id="top" data-formula="fluoride">
   <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
@@ -48,10 +50,22 @@
   </header>
 
   <main>
+    <section class="brand-hero" id="home" aria-labelledby="brand-heading">
+      <div class="brand-backdrop" aria-hidden="true"><img src="assets/brand-hero.webp" width="1584" height="992" alt="" fetchpriority="high" decoding="async"></div>
+      <div class="brand-content">
+        <h1 id="brand-heading" class="brand-wordmark">
+          <svg viewBox="20 50 860 230" role="img" aria-label="MINSY"><image href="assets/figma/f0fd1.png" width="900" height="319"/></svg>
+        </h1>
+        <p class="brand-intro">Dental-Hygienist-Designed.<br>Inspired by Clinical Practice.</p>
+        <a class="brand-discover" href="#discover">Discover MINSY<span aria-hidden="true" class="discover-mark"></span></a>
+      </div>
+      <a class="brand-scroll" href="#discover"><span>Explore MINSY</span><span class="scroll-stroke" aria-hidden="true"></span></a>
+    </section>
+
     <!-- =========================================================
          01. HERO + SCROLL-CHOREOGRAPHED UNBOX & EXPAND STAGE
     ========================================================== -->
-    <div class="scroll-scene" id="home">
+    <div class="scroll-scene" id="discover" tabindex="-1" aria-label="Discover MINSY expanding floss">
       <div class="scroll-stage">
         <section class="hero" aria-label="MINSY Expanding Floss">
           <div class="hero-ambient" aria-hidden="true">
@@ -67,7 +81,7 @@
                 <p class="eyebrow">MINSY EXPANDING FLOSS</p>
                 
               </div>
-              <h1>Made to<br><em>Expand with</em><br>Friction.</h1>
+              <h2>Made to<br><em>Expand with</em><br>Friction.</h2>
               <p class="intro">Dental-Hygienist-Designed.<br>Inspired by Clinical Practice.</p>
 
               <div class="hero-controls">
@@ -521,5 +535,6 @@
 
   <script src="app.js?v=original-copy-12"></script>
   <script src="journey.js?v=hero-flow-9"></script>
+  <script src="brand-hero.js?v=19"></script>
 </body>
 </html>
