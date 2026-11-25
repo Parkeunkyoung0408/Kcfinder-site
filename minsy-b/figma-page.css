@@ -149,3 +149,14 @@
 @media(hover:none){
  .design-b .site-header nav a:hover:not(:focus-visible) .brand-corner{opacity:0;transform:translateY(3px) scale(.35)}
 }
+
+/* Center the hero reading column when the layout stacks on smaller screens. */
+@media(max-width:900px){
+ .design-b .hero{grid-template-columns:minmax(0,1fr);text-align:center}
+ .design-b .hero-copy-column{justify-content:center}
+ .design-b .hero .phase-copy{width:100%;margin-inline:auto;text-align:center}
+ .design-b .hero h1,.design-b .hero .intro{text-align:center}
+ .design-b .hero .intro{margin-inline:auto}
+ .design-b .hero-controls{align-items:center}
+ .design-b .hero-formula-switcher{justify-content:center;flex-wrap:wrap}
+}
