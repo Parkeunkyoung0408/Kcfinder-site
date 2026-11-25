@@ -53,3 +53,9 @@
  .brand-discover,.discover-mark,.design-b .site-header{transition:none}
  .brand-discover:hover{transform:none}
 }
+
+/* Render original letter silhouettes with a transparent field and brand ink. */
+.brand-wordmark{mix-blend-mode:normal}
+.design-b .site-header .logo svg{display:block;width:100px;height:auto}
+@media(max-width:520px){.design-b .site-header .logo svg{width:78px}}
+@media(max-width:420px){.design-b .site-header .logo svg{width:72px}}
