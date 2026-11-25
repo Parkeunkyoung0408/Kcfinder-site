@@ -246,8 +246,8 @@
         const chosen = btn.dataset.shopFormula;
         if (dialogCopy) {
           dialogCopy.textContent = chosen
-            ? `MINSY ${chosen} Expanding Floss will be available on Amazon soon. Explore both formulas in the meantime.`
-            : 'Our Amazon storefront link is coming soon. Explore both Fluoride and Nano-Hydroxyapatite formulas in the meantime.';
+            ? `An Amazon purchase link for ${chosen} is not available on this website yet.`
+            : 'An Amazon purchase link is not available on this website yet.';
         }
         dialog.showModal();
       });
