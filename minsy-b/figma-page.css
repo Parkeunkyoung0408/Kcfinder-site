@@ -239,3 +239,21 @@
  .origin-summary .origin-manufacturer{font-size:17px}
  .origin-summary .origin-material{font-size:15px}
 }
+
+/* Compact product story: no empty scroll runway between introduction and details. */
+.design-b .hero{min-height:0;padding-top:64px;padding-bottom:48px}
+.design-b .section{padding-top:72px;padding-bottom:72px}
+.design-b .section-header,#why>.container>.section-header,.design-b .products-section .section-header{margin-bottom:40px}
+.texture-note{margin-top:48px}
+.design-b .ingredients-section{padding:72px 0}
+.design-b .origin-section{padding:48px 0}
+.design-b .end-cta{padding-top:64px}
+.design-b .end-product-display{margin-top:24px;height:500px}
+@media(max-width:900px){
+ .design-b .hero{padding-top:48px;padding-bottom:36px}
+ .design-b .section,.design-b .ingredients-section{padding-top:56px;padding-bottom:56px}
+ .design-b .origin-section{padding:40px 0}
+}
+@media(max-width:700px){
+ .design-b .end-product-display{height:auto;margin-top:24px}
+}

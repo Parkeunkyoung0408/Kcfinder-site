@@ -7,13 +7,14 @@
   const lid = document.getElementById('hero-box-lid');
   const dispenser = document.getElementById('hero-dispenser');
   if (!main || !scene || !hero || !pair || !lid || !dispenser) return;
+  const overview = new URLSearchParams(location.search).get('view') === 'overview';
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const clamp = n => Math.max(0, Math.min(1,n));
   const smooth = n => { n=clamp(n); if(n<1e-6)return 0; if(n>1-1e-6)return 1; return n*n*n*(n*(n*6-15)+10); };
   const segment = (p,a,b) => smooth((p-a)/(b-a));
   let current=0, frame=0, last=0, sticky=false, travel=700, heroStart=0;
   function scrollProgress() {
-    if(reduced.matches) return .80;
+    if(reduced.matches || overview) return .80;
     // Start from a closed box, even in short desktop viewports.
     // Viewport visibility alone must never complete the sequence on page load.
     return clamp((scrollY-heroStart)/travel) * .80;
@@ -44,7 +45,7 @@
   });
   let finaleCurrent=0;
   function finaleProgress(){
-    if(reduced.matches)return .8;
+    if(reduced.matches || overview)return .8;
     if(!finale)return 0;
     return clamp((innerHeight*.95-finale.getBoundingClientRect().top)/Math.min(480,innerHeight*.55));
   }
@@ -56,23 +57,24 @@
     frame=0;
     const target=scrollProgress();
     const dt=last?Math.min(50,time-last):16;last=time;
-    current=reduced.matches?target:current+(target-current)*(1-Math.exp(-dt/150));
+    current=(reduced.matches || overview)?target:current+(target-current)*(1-Math.exp(-dt/150));
     if(Math.abs(current-target)<.0005)current=target;
     const endTarget=finaleProgress();
-    finaleCurrent=reduced.matches?endTarget:finaleCurrent+(endTarget-finaleCurrent)*(1-Math.exp(-dt/150));
+    finaleCurrent=(reduced.matches || overview)?endTarget:finaleCurrent+(endTarget-finaleCurrent)*(1-Math.exp(-dt/150));
     if(Math.abs(finaleCurrent-endTarget)<.0005)finaleCurrent=endTarget;
     paint();
     if((current!==target||finaleCurrent!==endTarget)&&!document.hidden) frame=requestAnimationFrame(tick);
   }
   function request(){ if(!frame&&!document.hidden){last=0;frame=requestAnimationFrame(tick);} }
   function measure(){
-    sticky=!reduced.matches&&innerWidth>1100&&innerHeight>=650;
-    travel=sticky ? Math.min(440,Math.max(300,innerHeight*.4)) : 180;
+    // Animate inside the section without reserving an empty pinning runway.
+    sticky=false;
+    travel=Math.min(240,innerHeight*.28);
     document.body.classList.toggle('flowing-hero',sticky);
     scene.style.setProperty('--flow-travel',`${travel}px`);
     heroStart=sticky
       ? scrollY+scene.getBoundingClientRect().top
-      : Math.max(0,scrollY+pair.getBoundingClientRect().top-innerHeight*.35);
+      : Math.max(0,scrollY+scene.getBoundingClientRect().top-innerHeight*.45);
     request();
   }
   document.getElementById('hero-explore')?.addEventListener('click',()=>{
